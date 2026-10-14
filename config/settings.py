@@ -126,7 +126,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/6.1/howto/static-files/
 
 STATIC_URL = 'static/'
-# WhiteNoise sirve los estilos del admin directo desde los paquetes, sin collectstatic.
+# Vercel junta los estáticos del admin y los sirve desde su CDN; en local los sirve WhiteNoise.
 WHITENOISE_USE_FINDERS = True
 
 

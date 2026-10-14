@@ -29,7 +29,7 @@ El slug de cada Herramienta debe coincidir con el `id` de la pestaña en `src/Ap
 
 ## Despliegue en Vercel
 
-1. Importa el repo en Vercel con Framework Preset **Other**.
+1. Importa el repo en Vercel. Detecta Django solo (por `manage.py` y `WSGI_APPLICATION`), no hace falta `vercel.json`.
 2. Storage → crea una base **Neon (Postgres)** y conéctala (agrega `DATABASE_URL`).
 3. Variables de entorno:
    - `DJANGO_SECRET_KEY`: `python3 -c "import secrets;print(secrets.token_urlsafe(50))"`
